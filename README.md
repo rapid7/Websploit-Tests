@@ -12,9 +12,11 @@ A place for scripts that describe web exploits to live so they can be used in te
     sudo chown www-data. <path-to-scripts>/webdav
     sudo service apache2 restart
 
-```/etc/apache2/conf.d/webdav.conf````:
+```/etc/apache2/conf.d/webdav.conf```:
 
-    <Location <path-to-scripts>/webdav>
+    Alias <web-path>/webdav <path-to-scripts>/webdav
+
+    <Location <web-path>/webdav>
         DAV On
     </Location>
 
