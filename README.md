@@ -14,9 +14,11 @@ A place for scripts that describe web exploits to live so they can be used in te
 
 ```/etc/apache2/conf.d/webdav.conf```:
 
-    Alias <web-path>/webdav <path-to-scripts>/webdav
+```
+Alias <web-path>/webdav <path-to-scripts>/webdav
 
-    <Location <web-path>/webdav>
-        DAV On
-    </Location>
+<Location <web-path>/webdav>
+    DAV On
+</Location>
 
+```
