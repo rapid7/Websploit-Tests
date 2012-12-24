@@ -7,7 +7,6 @@ A place for scripts that describe web exploits to live so they can be used in te
 
 ```
 sudo apt-get install apache2 libapache2-mod-encoding
-sudo a2enmod dav_fsa2enmod dav
 sudo a2enmod dav* encoding
 sudo mkdir -p <path-to-scripts>/http_put_php
 sudo chown www-data. <path-to-scripts>/http_put_php
