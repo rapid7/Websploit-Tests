@@ -6,9 +6,8 @@ A place for scripts that describe web exploits to live so they can be used in te
 ## Setting up the WebDAV vulnerability
 
 ```
-sudo apt-get install apache2 libapache2-mod-encoding
-sudo a2enmod dav_fsa2enmod dav
-sudo a2enmod dav* encoding
+sudo apt-get install apache2 libapache2-mod-encoding php5 libapache2-mod-php5
+sudo a2enmod dav* encoding php5
 sudo mkdir -p <path-to-scripts>/http_put_php
 sudo chown www-data. <path-to-scripts>/http_put_php
 sudo service apache2 restart
